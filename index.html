@@ -1,9 +1,67 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 
 <!-- Mirrored from rento.quest/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 21 Mar 2025 20:11:18 GMT -->
 <head>
+
+    <style>
+	    boy {
+            font-family: 'Poppins', sans-serif;
+            background: #29ca8e;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            width: 350px;
+            text-align: center;
+        }
+        .form-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 12px;
+            text-align: left;
+            color: #555;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+        }
+        input, select {
+            background: #f4f4f4;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+
+
+
+
 
     <title>Rento</title>
 
@@ -96,7 +154,28 @@
             </div>
         </div>
     </section>
+	
+	<boy>
+	 <div class="form-container">
+        <h2>Car Pickup Form</h2>
+        <form>
+            <label for="pickup-location">Pick Up Location:</label>
+            <input type="text" id="pickup-location" name="pickup-location" placeholder="Enter location" required>
 
+            <label for="pickup-date">Pick Up Date:</label>
+            <input type="date" id="pickup-date" name="pickup-date" required>
+
+            <label for="car-type">Car Type:</label>
+            <select id="car-type" name="car-type">
+                <option value="sedan">Sedan</option>
+                <option value="mini">Mini</option>
+                <option value="xuv">XUV</option>
+            </select>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+</boy>
     <main>
         <section>
             <div class="container">
